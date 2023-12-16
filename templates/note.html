@@ -1,0 +1,31 @@
+
+</head>
+<nav>
+  <a href="/lab6/article_list">Посмотреть записи</a>
+  <a href="/lab6/article_publish_list">Опубликованные записи</a>
+  <a href="/lab6/new_article" >Создать заметку</a>
+  <a href="/lab6/login">Логин</a>
+  <a href="/lab6/register" >Регистрация</a>
+  <span>{{username}}</span>
+  <a style="background-color: red;" href="/lab5/logout" >Выход</a>
+</nav>
+<h1>Создание новой статьи</h1>
+<div>
+  <form method="POST">
+      <label for="title_article">Название статьи</label><br>
+      <textarea style="width: 100%;" name="title_article" id="title_article" cols="30" rows="10"></textarea><br>
+      <label for="text_article">Текст статьи</label><br>
+      <textarea style="width: 100%;" name="text_article" id="text_article" cols="30" rows="10"></textarea><br>
+
+      <label for="publish">Опубликовать?</label>
+      <select name="publish" id="publish">
+          <option value="False">Нет</option>
+          <option value="True">Да</option>
+      </select><br>
+      <br>
+      <span style="color: red;">{{ errors }}</span><br>
+      <br>
+      <button type="submit">Создать</button><br>
+      
+  </form>
+</div>

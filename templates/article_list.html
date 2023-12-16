@@ -1,0 +1,22 @@
+</head>
+<nav>
+    <a href="/lab6/article_list">Посмотреть записи</a>
+    <a href="/lab6/article_publish_list">Опубликованные записи</a>
+    <a href="/lab6/new_article" >Создать заметку</a>
+    <a href="/lab6/login">Логин</a>
+    <a href="/lab6/register" >Регистрация</a>
+    <span>{{ username }}</span>
+    <a style="background-color: red;" href="/lab6/logout" >Выход</a>
+</nav>
+<h1>Список статей пользователя {{ username }}</h1>
+<div>
+    <ul>
+        {% for article in articles_list %}
+        <li>
+            <a href="/lab6/articles/{{ article.id }}">
+                <h2 style="margin-top: 24px; margin-bottom: 0px;">{{ article.article_title }}</h2>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block lab %}Лабораторная работа 5{% endblock %}
+
+{% block main %}
+    <div>
+        <h1>{{ articles.title }}</h1>
+        {{ articles.article_text }}
+    </div>
+
+    <a href="/lab6/head">На главную</a>
+{% endblock %}
