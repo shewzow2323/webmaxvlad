@@ -15,6 +15,7 @@ def menu():
     <head>
         <title>НГТУ, ФБИ-11, Лабораторные работы</title>
     </head>
+        <linkrel="stylesheet" href="main.css">
         <body>
         <header>
             НГТУ,ФБИ-11, WEB-программирование, часть 2. Список лабораторных
@@ -35,6 +36,10 @@ def menu():
         <ol> <a href='lab6'>/ШЕСТАЯ ЛАБОРАТОРНАЯ РАБОТА</a> </ol>
        
        <ol> <a href='lab7/indexx'>/СЕДЬМАЯ ЛАБОРАТОРНАЯ РАБОТА</a> </ol>
+       
+       <ol> <a href='lab8/indexxx'>/ВОСЬМАЯ ЛАБОРАТОРНАЯ РАБОТА</a> </ol>
+
+      
         <footer>
              Кривошеев М.С., Гавра В.А. ФБИ-11 3курс,2023
         </footer>
