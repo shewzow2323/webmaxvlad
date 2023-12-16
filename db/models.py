@@ -4,7 +4,7 @@ from flask_login import UserMixin
 class users(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(30)), nullable=False,
-unique=True)
+    unique=True)
     password = db.Column(db.sString(102),nullable=False)
 
 
