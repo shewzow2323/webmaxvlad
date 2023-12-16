@@ -1,7 +1,7 @@
 from flask import Flask, Blueprint, render_template, request, make_response
 from db import db
 from flask_sqlalchemy import SQLAlchemy
-from db.models import users
+
 from flask_login import LoginManager
 
 
@@ -36,9 +36,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
-@lab7.route('/lab7/')
-def main():
-    return render_template('lab7/index.html')
+
     
 
 
