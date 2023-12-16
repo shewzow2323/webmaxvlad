@@ -36,6 +36,10 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
+@lab7.route('/lab7/')
+def main():
+    return render_template('lab7/index.html')
+    
 
 
 
